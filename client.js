@@ -74,7 +74,7 @@ const connect = async () => {
       var phoneNumber = config.pairing.number
       if (!Object.keys(PHONENUMBER_MCC).some(v => String(phoneNumber).startsWith(v))) {
          spinnies.fail('start', {
-            text: `Invalid number, start with country code (Example : 62xxx)`
+            text: `Invalid number, start with country code (Example : 6287888888242)`
          })
          process.exit(0)
       }
